@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="name">product_name</label>
+        <input type="text" name="name" required><br>
+        <label for="description">product_description</label>
+        <input type="text" name="description" required><br>
+        <label for="price">product_price</label>
+        <input type="numeric" name="price"required><br>
+        <label for="quantity">product_stock_quantity</label>
+        <input type="numeric" name="quantity "required><br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
